@@ -21,7 +21,7 @@ const warningHandler = (str) => {
 const getWeather = () => {
   const query = city.value;
   const apiKey = "f46c40c20ea440f993c64108240907";
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=no`;
   if (!query) {
     warningHandler("You have to enter a city name!");
     return;
